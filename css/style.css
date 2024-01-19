@@ -10,15 +10,51 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-image: linear-gradient(180deg, #65736e 0, #586d68 12.5%, #496763 25%, #37605d 37.5%, #1f5959 50%, #005156 62.5%, #004a54 75%, #004453 87.5%, #003d52 100%);
+    background-image: url(/landingPage/storage/img/antes-de-arrancar-párate-a-mirar-las-opciones..avif);
+    background-position: right center center;
+    background-size: cover; 
+    
 }
 
 nav{
     width: 100%;
     height: 10vh;
     background-color: black;
+    display: flex;
+    align-items: center;
 }
-
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    max-width: 1024px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ul .li .a{
+    padding: 0 16px;
+}
+p{
+    margin: 0;
+}
+.boton{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.circulo{
+    width: 30px;
+    height: 30px;
+    background-color: purple;
+    border-radius: 50%;
+    margin-right: 8px;
+}
 .container{
     width: 100%;
     height: 100%;
@@ -82,6 +118,7 @@ section .content{
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    filter: drop-shadow(-10px -10px 200px white);
 }
 .main-content h1{
     font-size: clamp(2rem , 1rem + 5vw, 4rem);
@@ -93,7 +130,8 @@ section .content{
 
 .main-content p{
     margin-top: 10px;
-    color: black;
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(-10px -10px 200px white);
 }
 
 .main-content .order{
@@ -131,7 +169,7 @@ section .content{
     max-width: 450px;
     width: 100%;
     margin-right: 100px;
-    transform: rotate(40deg) translateX(900%); 
+    transform: rotate(40deg) translateX(-100%); 
     filter: drop-shadow(-10px -10px 200px white);
 }
 
@@ -163,3 +201,8 @@ section .content{
       margin-right: none;  
     }
 }
+@media (min-width:768px){
+    .boton{
+        display: none;
+    }
+}    
